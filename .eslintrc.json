@@ -1,0 +1,21 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-unused-vars": 0,
+    "no-console": 0
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true,
+    "experimentalObjectRestSpread": true
+  },
+  "plugins": [
+    "react"
+  ]
+}
+
