@@ -11,7 +11,7 @@ export default class TodoApp extends Component {
     return (
       <div>
         <section className={'todoapp'}>
-          <TodoList todos={this.props.todos}/>
+          <TodoList filter={this.props.filter} todos={this.props.todos}/>
         </section>
       </div>
     )

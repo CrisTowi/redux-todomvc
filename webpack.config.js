@@ -2,7 +2,7 @@ var webpack = require('webpack'); // Requiring the webpack lib
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:4000', // Setting the URL for the hot reload
+    'webpack-dev-server/client?http://localhost:8000', // Setting the URL for the hot reload
     'webpack/hot/only-dev-server', // Reload only the dev server
     './src/index.jsx'
   ],

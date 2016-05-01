@@ -12,7 +12,9 @@ const todos = List.of(
   Map({id: 1, text: 'Immutable', status: 'active', editing: false})
 )
 
+const filter = 'all'
+
 ReactDOM.render(
-  <TodoApp todos={todos} />,
+  <TodoApp filter={filter} todos={todos} />,
   document.getElementById('app')
 )
