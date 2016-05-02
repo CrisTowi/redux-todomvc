@@ -20,12 +20,19 @@ export default class TodoList extends Component {
     return []
   }
 
+  isCompleted(item) {
+    console.log(item.get('status') === 'completed')
+    return item.get('status') === 'completed'
+  }
+
   render() {
     let items = this.getItems().map((item) => {
       return (
         <TodoItem
           key={item.get('text')}
           text={item.get('text')}
+          isCompleted={this.isCompleted(item)}
+          isEditing={item.get('editing')}
         />
       )
     })
