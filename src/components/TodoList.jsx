@@ -21,7 +21,6 @@ export default class TodoList extends Component {
   }
 
   isCompleted(item) {
-    console.log(item.get('status') === 'completed')
     return item.get('status') === 'completed'
   }
 
@@ -33,6 +32,9 @@ export default class TodoList extends Component {
           text={item.get('text')}
           isCompleted={this.isCompleted(item)}
           isEditing={item.get('editing')}
+          toggleComplete={this.props.toggleComplete}
+          deleteItem={this.props.deleteItem}
+          editItem={this.props.editItem}
         />
       )
     })

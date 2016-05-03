@@ -13,7 +13,7 @@ describe('TodoList', () => {
 		const todos = List.of(
 			Map({id: 1, text: 'React', status: 'active'}),
 			Map({id: 2, text: 'Redux', status: 'active'}),
-			Map({id: 3, text: 'Immutable', status: 'completed'}),
+			Map({id: 3, text: 'Immutable', status: 'completed'})
 		)
 
 		const filter = 'active'
@@ -33,7 +33,7 @@ describe('TodoList', () => {
 		const todos = List.of(
 			Map({id: 1, text: 'React', status: 'active'}),
 			Map({id: 2, text: 'Redux', status: 'active'}),
-			Map({id: 3, text: 'Immutable', status: 'completed'}),
+			Map({id: 3, text: 'Immutable', status: 'completed'})
 		)
 
 		const filter = 'completed'
